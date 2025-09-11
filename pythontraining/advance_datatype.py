@@ -85,7 +85,7 @@ else:
     print('false')
 
 #set 
-s={1,5,3,4,2,7,8,6}
+s={1,5,3,4,2,7,8,6,'A',4.5}
 print(type(s))
 print(s)
 s.add(20)
