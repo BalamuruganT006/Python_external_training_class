@@ -32,3 +32,23 @@ print( 'Pratice makes \'prefect\' '  )
 
 
 print("\"Pratice\" makes 'perfect")"""
+
+#string representation
+"""
+p="python"
+
+for i in p:
+    print(i)
+"""
+
+p1='Hello'
+p2='world'
+print(p1[3])
+print(p2[3])
+
+print(id(p1))
+print(id(p2))
+
+print(id(p1[3]))
+print(id(p2[3]))
+print(id(p1[2]))
