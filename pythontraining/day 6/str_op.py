@@ -99,12 +99,28 @@ print(s[2:5:1])"""
     print(k)"""
 
 
-#type 3 (using indexing)
+"""#type 3 (using indexing)
 for i in range(len(s)-2):
 
      k = s[i:i+3]
        
      print(k)    
+"""
+"""#print without first and last
+k=s[1:-1:1]
+print(k)
 
 
 
+#reverse without fist and last
+k=s[-2:0:-1]
+print(k)
+
+"""
+
+#srting first staight and second half as reverse
+
+h= len(s) // 2
+first = s[:h]
+second = s[h:]
+print(first + second[::-1])
