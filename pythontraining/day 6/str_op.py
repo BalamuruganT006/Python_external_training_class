@@ -82,7 +82,7 @@ print( s[i : len(s) : 1])
 print(s[5:3:-1])
 """
 
-s=input("enter the name: ")
+#s=input("enter the name: ")
 
 #type 1
 """
@@ -117,10 +117,30 @@ k=s[-2:0:-1]
 print(k)
 
 """
-
+"""
 #srting first staight and second half as reverse
 
 h= len(s) // 2
 first = s[:h]
 second = s[h:]
-print(first + second[::-1])
+print(first + second[::-1])"""
+
+#string comparision
+
+s1='python'
+s2='Python'
+
+if(id(s1) == id (s2)):
+    print("both are same")
+else:
+    print("both are different") 
+
+
+
+s1='python'
+s2='python'
+
+if(s1 is s2):
+    print("both are same")
+else:
+    print("both are different")        
