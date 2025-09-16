@@ -1,6 +1,5 @@
-
- s=''
- print(s)
+s=''
+print(s)
 
 
 #type 2
