@@ -24,7 +24,7 @@ for j in i:
 print(vcount)               
 print(ccount)
 
- print(i.title())
+print(i.title())
 
 
 print(i.replace(" ", ""))
