@@ -80,14 +80,62 @@ for _ in range(n):
 #append
 """l1=[10,20,30,40,50]
 l2=l1+[60,70,80,90]       
+l1.append(l2)
+print(l1)
 
 print(l1)        """
-
+"""
 #extends
 l1=[10,20,30,40,50]
 l2=[60,70,80,90] 
-l1.append(l2)
+l1.extend(l2)
 print(l1)
 
 l1 [0] = 1111
 print(l1)
+
+l1.remove(20)
+print(l1)"""
+
+
+
+l1=[10,20,999,40,40,40,50,999,60,70,999]
+
+
+#n=int(input("enter the num to remove: "))
+"""for i in l1:
+     if i == n :
+        l1.remove(i)"""
+
+"""# method 2
+print(l1)  
+while n in l1:
+        l1.remove(n)    
+print(l1)        """
+"""print(l1)
+l1.pop()
+print(l1)"""
+
+"""l2=[]  #copy(),l2=l1[:],list(l1)
+l2.extend(l1)
+print(l2)
+print(id(l1))
+print(id(l2))"""
+
+#to fin max and min and sum both value
+l1=[10,20,999,40,40,40,50,999,60,70,999]
+
+if  l1:
+    max=l1[0]
+    min=l1[0]
+    total=0
+    for i in l1:
+        if i > max:
+            max = i
+        if i < min:
+            min = i
+    total=max+min
+    print("MAX:",max)
+    print("MIN:",min)
+    print("Total:",total)
+
