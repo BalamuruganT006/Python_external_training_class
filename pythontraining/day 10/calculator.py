@@ -57,7 +57,7 @@ match calc:
     case _:
 
     
-        print("enter te valid choice")
+        print("enter the valid choice")
 
 
 
