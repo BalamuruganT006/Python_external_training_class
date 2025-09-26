@@ -50,16 +50,23 @@ print("Execution end")
 
 def fun2():
     print("start")
+  #try:  
     num=int(input())
     den=int(input())
     ans=num/den
     print(ans)
+  #except Exception as e:
+    #    print(e)
     print('end')
 
 
 def fun1():
     print("start 1")
-    fun2()
+    try:
+        fun2()
+    except Exception as e:
+        print(e)
+
     print("end 1")
 
 
