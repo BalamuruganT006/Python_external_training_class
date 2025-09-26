@@ -56,3 +56,40 @@ l=[10,13,24,15,25,30,66]
 ans=list(filter(lambda a: True if a%2 == 0 else False,l))
 print(ans)
 
+#str ,str remove,repation,reverse
+
+
+#reduce
+l=[1,2,3,4,5]
+def fun(a):
+     print("sum:", sum(a))
+fun(l)
+
+from functools import reduce
+
+l=[1,2,3,4,5]
+result = reduce(lambda x, y: x + y, l)
+print("sum:", result)
+
+
+from functools import reduce
+l=[1,2,3,4,5]
+def fun(x,y):
+    return x+y
+ans=reduce(lambda x,y: x+y,l)
+print(ans)
+
+
+
+l=[1,2,3,4,5]
+def fun(x):
+    return x**2
+
+sq=list(map(fun,l))
+print(sq)
+
+
+
+l=[1,2,3,4,5]
+ans=list(map(lambda a: a**2 ,l))
+print(ans)
