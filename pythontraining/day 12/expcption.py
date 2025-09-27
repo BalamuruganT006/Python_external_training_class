@@ -141,3 +141,62 @@ def main():
 
 
 main()
+
+#raise (exception)for moblie num 
+
+def validate(mob):
+    if len(mob)==10:
+        print("valid")
+    else:
+        raise ValueError
+
+
+def main():
+    mob=input()
+    validate(mob)
+
+main()
+
+#in py there are four types of  try,except,raise,finally
+
+def menu(item):
+    if item == "idly":
+        print("Idly ready")
+    elif item == "dosa":
+        print("dosa ready")
+    elif item == "poori":
+        print('poori ready')
+    elif item == "poratta":
+        print("sir iku rendu set u poratta ")
+    else:
+        raise NameError
+
+def main():
+    item=input()
+    menu(item)
+
+main()  
+
+
+
+lst=[10,20,30,40,50,60]
+d={1:"c",2:"c++",3:"pyton",4:"java"}
+try:
+        n=int(input("enter the key"))
+        print(d[n])
+        nu = int(input())
+        print(lst[nu])
+        den = int(input())
+        print(lst[den])
+        ans = lst[nu]/ lst[den]
+except :              
+         print("some issuse")
+else:
+        print(ans)    
+finally :
+        print("aswome")
+
+f=open("C:\\Users\\LENOVO\\OneDrive\\Desktop\\bala.txt","w")
+f.write("umbu da")
+f.close()
+
