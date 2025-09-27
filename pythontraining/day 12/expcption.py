@@ -77,3 +77,67 @@ def main():
 
 
 main()
+
+
+
+def fun2():
+    print("start")
+    try:  
+        num=int(input())
+        den=int(input())
+        ans=num/den
+        print(ans)
+    except  :
+           print("some error")
+    print('end')
+
+
+def fun1():
+    print("start 1")
+    try:
+        fun2()
+    except Exception as e:
+        print(e)
+
+    lst=[10,20,30,40,50,60]
+    d={1:"c",2:"c++",3:"pyton",4:"java"}
+    try:
+        n=int(input("enter the key"))
+        print(d[n])
+        nu = int(input())
+        print(lst[nu])
+        den = int(input())
+        print(lst[den])
+        ans = lst[nu]/ lst[den]
+        
+    except KeyError as e:  
+         print(e)
+
+    except IndexError as e :
+         print(e)
+
+    except ZeroDivisionError as e:
+         print(e)
+
+
+    except Exception as e :
+         print(e)
+
+    except :              
+         print("some issuse")
+    else:
+        print(ans)     
+    print("Execution end")
+    
+    
+
+    print("end 1")
+
+
+def main():
+    print('start main')
+    fun1()
+    print("end main")
+
+
+main()
